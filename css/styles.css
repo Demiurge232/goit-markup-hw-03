@@ -1,0 +1,248 @@
+:root {
+  /*bg colors*/
+  --main-bg-cl: #ffffff;
+  --secondary-bg-cl: #2f303a;
+  --third-bg-cl: #f5f4fa;
+  --accent-cl: #2196f3;
+  --main-page-btn-cl: #188ce8;
+  --section-ptf-cl: #eeeeee;
+  /*text colors */
+  --main-text-cl: #212121;
+  --secondary-text-cl: #757575;
+  --logo-cl: #000000;
+  --foter-cont-cl-60: rgba(255, 255, 255, 0.6);
+  /* fonts */
+  --main-font: 'Roboto', sans-serif;
+  --logo-font: 'Raleway', sans-serif;
+  /* other */
+  --main-bord-rad: 4px;
+  --secondary-font-weight: 700;
+  --third-font-weight: 500;
+}
+
+body {
+  color: var(--main-text-cl);
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+}
+
+/* reset and pseudoclasses */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-cl);
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+}
+
+.main-btn:hover,
+.main-btn:focus {
+  background-color: var(--main-page-btn-cl);
+}
+
+.main-btn:active {
+  background-color: var(--main-page-btn-cl);
+}
+
+.btn-filter:hover,
+.btn-filter:focus {
+  color: var(--main-bg-cl);
+  background-color: var(--accent-cl);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: var(--main-bord-rad);
+}
+
+.btn-filter:active {
+  color: var(--main-bg-cl);
+  background-color: var(--accent-cl);
+}
+
+.info {
+  font-style: normal;
+}
+
+/* Header */
+
+.logo {
+  color: var(--main-text-cl);
+  text-decoration: none;
+  font-family: var(--logo-font);
+  font-weight: var(--secondary-font-weight);
+  font-size: 26px;
+  line-height: calc(31 / 26);
+}
+
+.logo-first {
+  color: var(--accent-cl);
+}
+
+.nav-link {
+  color: var(--main-text-cl);
+  font-weight: var(--third-font-weight);
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+
+.current {
+  color: var(--accent-cl);
+}
+
+.contact-link {
+  color: var(--secondary-text-cl);
+  font-weight: var(--third-font-weight);
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+
+/* main studio*/
+
+/* section hero */
+.hero {
+  background-color: var(--secondary-bg-cl);
+}
+
+.title {
+  color: var(--main-bg-cl);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.main-btn {
+  background-color: var(--accent-cl);
+  color: var(--main-bg-cl);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: var(--main-bord-rad);
+  width: 216px;
+  height: 50px;
+
+  font-family: inherit;
+  font-weight: var(--secondary-font-weight);
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+}
+
+/* section our advantages */
+.advantage-subtitle {
+  font-weight: var(--secondary-font-weight);
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+}
+
+.advantage-text {
+  color: var(--secondary-text-cl);
+}
+
+/* section  what do we do*/
+.practice-subtitle {
+  font-weight: var(--secondary-font-weight);
+  font-size: 36px;
+  line-height: calc(42 / 36);
+}
+
+/* section our team*/
+.team {
+  background-color: var(--third-bg-cl);
+}
+
+.team-item {
+  background-color: var(--main-bg-cl);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-title {
+  font-weight: var(--secondary-font-weight);
+  font-size: 36px;
+  line-height: calc(42 / 36);
+}
+
+.team-subtitle {
+  font-weight: var(--third-font-weight);
+  font-size: 16px;
+  line-height: calc(19 / 16);
+}
+
+.team-text {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  color: var(--secondary-text-cl);
+}
+
+/* main portfolio */
+
+.btn-filter {
+  background-color: var(--third-bg-cl);
+  font-family: inherit;
+  font-weight: var(--third-font-weight);
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  border-radius: var(--main-bord-rad);
+  width: 125px;
+  height: 38px;
+}
+
+.portfol-subtitle {
+  font-weight: var(--secondary-font-weight);
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+}
+
+.portfol-text {
+  color: var(--secondary-text-cl);
+  font-size: 16px;
+  line-height: calc(30 / 16);
+}
+
+/* footer */
+.bottom-page {
+  background-color: var(--secondary-bg-cl);
+}
+
+.logo-bottom {
+  color: var(--main-bg-cl);
+}
+
+.map-link {
+  color: var(--main-bg-cl);
+}
+
+.info-link {
+  color: var(--foter-cont-cl-60);
+}

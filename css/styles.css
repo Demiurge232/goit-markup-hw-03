@@ -323,8 +323,28 @@ img {
   font-size: 16px;
   line-height: calc(26 / 16);
   border-radius: var(--main-bord-rad);
-  width: 125px;
-  height: 38px;
+
+  min-width: 73px;
+  min-height: 38px;
+  padding: 6px 22px;
+}
+
+.list-btn-filter {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 0 0 50px;
+}
+
+.portfolio-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+
+.portfol-item {
+  flex-basis: calc((100% - var(--indent) * (var(--item) - 1)) / var(--item));
+  border-bottom: 1px solid var(--cart-border-cl);
 }
 
 .portfol-subtitle {

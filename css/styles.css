@@ -32,6 +32,23 @@ body {
   letter-spacing: 0.03em;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list-index {
+  display: flex;
+  gap: var(--indent);
+}
+
+.section {
+  padding: 94px 0;
+}
+
 /* reset and pseudoclasses */
 
 h1,
@@ -114,6 +131,15 @@ img {
 
 /* Header */
 
+.top-page {
+  border-bottom: 1px solid var(--header-border-cl);
+}
+
+.container-top-page {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   color: var(--main-text-cl);
   text-decoration: none;
@@ -123,11 +149,27 @@ img {
   line-height: calc(31 / 26);
 }
 
+.logo-top {
+  margin-right: 92px;
+}
+
 .logo-first {
   color: var(--accent-cl);
 }
 
+.nav {
+  margin-right: auto;
+}
+
+.list-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
 .nav-link {
+  display: block;
+  padding: 32px 0;
   color: var(--main-text-cl);
   font-weight: var(--third-font-weight);
   font-size: 14px;
@@ -139,7 +181,15 @@ img {
   color: var(--accent-cl);
 }
 
+.contact {
+  display: flex;
+  gap: 50px;
+}
+
 .contact-link {
+  display: block;
+  padding: 32px 0;
+
   color: var(--secondary-text-cl);
   font-weight: var(--third-font-weight);
   font-size: 14px;

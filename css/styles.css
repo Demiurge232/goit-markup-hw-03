@@ -312,6 +312,16 @@ img {
 
 .logo-bottom {
   color: var(--main-bg-cl);
+  display: block;
+  margin-bottom: 20px;
+}
+
+.container-bottom-page {
+  padding-top: 60px;
+}
+
+.list-info {
+  padding-bottom: 60px;
 }
 
 .map-link {

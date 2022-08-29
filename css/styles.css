@@ -393,6 +393,10 @@ img {
   padding-bottom: 60px;
 }
 
+.info-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .map-link {
   color: var(--main-bg-cl);
 }
